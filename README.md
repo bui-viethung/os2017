@@ -10,5 +10,5 @@ Students are expected to:
 Student Info
 =======================
 
-* Name: 
-* ID: *YourIdHere*
+* Name: Bui Viet Hung
+* ID: USTHBI6-058
