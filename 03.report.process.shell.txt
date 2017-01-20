@@ -15,7 +15,7 @@ root        13  0.0  0.0      0     0 ?        S    08:34   0:00 [ksoftirqd/1]
 ~$ gnome-calculator
 
 ~$ ps ax | grep gnome-calculator
- 5613 pts/36   S+     0:00 grep --color=auto gnome-calculator
+ 5850 pts/38   S+     0:00 grep --color=auto gnome-calculator
  
 ~$ cat /proc/5850/status
 Name:	gnome-calculato
@@ -28,5 +28,12 @@ TracerPid:	0
 Uid:	997	997	997	997
 Gid:	997	997	997	997
 
+~$ kill -19 5850
+[1]+  Stopped                 gnome-calculator
 
+~$ kill -18 5850
+(resume process in specific task)
+
+~$ kill -9 5850
+Killed
  
