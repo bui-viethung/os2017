@@ -1,0 +1,28 @@
+~$ find /tmp/guest-zzoson -type f -print | grep 'list'
+/tmp/guest-zzoson/.mozilla/firefox/a7k1s7q3.default/blocklist-plugins.json
+/tmp/guest-zzoson/.mozilla/firefox/a7k1s7q3.default/blocklist.xml
+/tmp/guest-zzoson/.mozilla/firefox/a7k1s7q3.default/blocklist-addons.json
+/tmp/guest-zzoson/.local/share/zeitgeist/fts.index/termlist.baseB
+/tmp/guest-zzoson/.local/share/zeitgeist/fts.index/postlist.baseB
+/tmp/guest-zzoson/.local/share/zeitgeist/fts.index/termlist.baseA
+/tmp/guest-zzoson/.local/share/zeitgeist/fts.index/postlist.baseA
+/tmp/guest-zzoson/.local/share/zeitgeist/fts.index/termlist.DB
+/tmp/guest-zzoson/.local/share/zeitgeist/fts.index/postlist.DB
+/tmp/guest-zzoson/Documents/listabc
+
+:~$ wc -l /etc/passwd
+43 /etc/passwd
+
+~$ free
+              total        used        free      shared  buff/cache   available
+Mem:        5997532     1703860     2975432      442580     1318240     3572244
+Swap:       6176764           0     6176764
+
+~$ cat /proc/cpuinfo | grep "siblings"
+siblings	: 4
+siblings	: 4
+siblings	: 4
+siblings	: 4
+
+~$ cd Pictures | find -name *.jpg|wc -l
+0
