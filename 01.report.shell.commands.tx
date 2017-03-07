@@ -1,0 +1,67 @@
+echo hello world
+hello world
+
+:~$ passwd
+Changing password for m3wk.
+(current) UNIX password: 
+passwd: Authentication token manipulation error
+passwd: password unchanged
+
+~$ date
+Mon Mar  6 19:17:31 PST 2017
+
+~$ hostname
+ubuntu
+
+~$ arch
+x86_64
+
+:~$ uname -a
+Linux ubuntu 4.4.0-21-generic #37-Ubuntu SMP Mon Apr 18 18:33:37 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+
+~$ dmesg
+[    0.000000] Initializing cgroup subsys cpuset
+[    0.000000] Initializing cgroup subsys cpu
+[    0.000000] Initializing cgroup subsys cpuacct
+[    0.000000] Linux version 4.4.0-21-generic (buildd@lgw01-21) (gcc version 5.3.1 20160413 (Ubuntu 5.3.1-14ubuntu2) ) #37-Ubuntu SMP Mon Apr 18 18:33:37 UTC 2016 (Ubuntu 4.4.0-21.37-generic 4.4.6)
+[    0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz-4.4.0-21-generic root=UUID=44d4a5e6-1bfa-4bd6-a241-cad0fce0c394 ro find_preseed=/preseed.cfg auto noprompt priority=critical locale=en_US quiet
+[    0.000000] KERNEL supported cpus:
+[    0.000000]   Intel GenuineIntel
+[    0.000000]   AMD AuthenticAMD
+[    0.000000]   Centaur CentaurHauls
+[    0.000000] Disabled fast string operations
+[    0.000000] x86/fpu: xstate_offset[2]:  576, xstate_sizes[2]:  256
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x01: 'x87 floating point registers'
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x02: 'SSE registers'
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x04: 'AVX registers'
+[    0.000000] x86/fpu: Enabled xstate features 0x7, context size is 832 bytes, using 'standard' format.
+[    0.000000] x86/fpu: Using 'eager' FPU context switches.
+
+:~$ uptime
+ 19:20:13 up  1:23,  1 user,  load average: 0.60, 0.71, 0.46
+ ~$ whoami
+m3wk
+~$ who
+m3wk     tty7         2017-03-06 11:23 (:0)
+~$ id
+uid=1000(m3wk) gid=1000(m3wk) groups=1000(m3wk),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),113(lpadmin),128(sambashare)
+~$ last
+m3wk     tty7         :0               Mon Mar  6 11:23    gone - no logout
+reboot   system boot  4.4.0-21-generic Mon Mar  6 10:49   still running
+
+wtmp begins Mon Mar  6 10:49:06 2017
+
+~$ finger
+The program 'finger' is currently not installed. You can install it by typing:
+sudo apt install finger
+
+~$ w
+ 19:44:35 up  1:25,  1 user,  load average: 1.05, 0.74, 0.50
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+m3wk     tty7     :0               11:23    8:54m  1:37   0.19s /sbin/upstart -
+
+
+
+
+
+
